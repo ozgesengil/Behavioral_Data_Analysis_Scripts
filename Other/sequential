@@ -1,0 +1,258 @@
+T = dataobl1and2;
+
+Par1 = T(1:84,:);
+Par2 = T(85:168,:);
+Par3 = T(169:252,:);
+Par4 = T(253:336,:);
+Par5 = T(337:420,:);
+Par6 = T(421:504,:);
+Par7 = T(505:588,:);
+Par8 = T(589:672,:);
+Par9 = T(673:756,:);
+Par10 = T(757:840,:);
+Par11 = T(841:924,:);
+Par12 = T(925:1008,:);
+Par13 = T(1009:1092,:);
+Par14 = T(1093:1176,:);
+Par15 = T(1177:1260,:);
+Par16 = T(1261:1344,:);
+Par17 = T(1345:1428,:);
+Par18 = T(1429:1512,:);
+Par19 = T(1513:1596,:);
+Par20 = T(1597:1680,:);
+Par21 = T(1681:1764,:);
+Par22 = T(1765:1848,:);
+Par23 = T(1849:1932,:);
+Par24 = T(1933:2016,:);
+Par25 = T(2017:2100,:);
+Par26 = T(2101:2184,:);
+Par27 = T(2185:2268,:);
+Par28 = T(2269:2352,:);
+Par29 = T(2353:2436,:);
+Par30 = T(2437:2520,:);
+Par31 = T(2521:2604,:);
+Par32 = T(2605:2688,:);
+Par33 = T(2689:2772,:);
+Par34 = T(2773:2856,:);
+Par35 = T(2857:2940,:);
+Par36 = T(2941:3024,:);
+Par37 = T(3025:3108,:);
+Par38 = T(3109:3192,:);
+Par39 = T(3193:3276,:);
+Par40 = T(3277:3360,:);
+Par41 = T(3361:3444,:);
+Par42 = T(3445:3528,:);
+Par43 = T(3529:3612,:);
+Par44 = T(3613:3696,:);
+Par45 = T(3697:3780,:);
+Par46 = T(3781:3864,:);
+Par47 = T(3865:3948,:);
+Par48 = T(3949:4032,:);
+Par49 = T(4033:4116,:);
+Par50 = T(4117:4200,:);
+Par51 = T(4201:4284,:);
+Par52 = T(4285:4368,:);
+Par53 = T(4369:4452,:);
+Par54 = T(4453:4536,:);
+Par55 = T(4537:4620,:);
+Par56 = T(4621:4704,:);
+Par57 = T(4705:4788,:);
+Par58 = T(4789:4872,:);
+Par59 = T(4873:4956,:);
+Par60 = T(4957:5040,:);
+Par61 = T(5041:5124,:);
+Par62 = T(5125:5208,:);
+Par63 = T(5209:5292,:);
+Par64 = T(5293:5376,:);
+Par65 = T(5377:5460,:);
+Par66 = T(5461:5544,:);
+Par67 = T(5545:5628,:);
+Par68 = T(5629:5712,:);
+Par69 = T(5713:5796,:);
+Par70 = T(5797:5880,:);
+Par71 = T(5881:5964,:);
+Par72 = T(5965:6048,:);
+Par73 = T(6049:6132,:);
+
+
+
+C={Par1,Par2,Par3,Par4,Par5,Par6,Par7,Par8,Par9,Par10,Par11,Par12,Par13,...
+    Par14,Par15,Par16,Par17,Par18,Par19,Par20,Par21,Par22,Par23,Par24,Par25,Par26,...
+    Par27,Par28,Par29,Par30,Par31,Par32,Par33,Par34,Par35,Par36,Par37,...
+        Par38,Par39,Par40,Par41,Par42,Par43,Par44,Par45,Par46,Par47,Par48,Par49,Par50,Par51,Par52,...
+        Par53,Par54,Par55,Par56,Par57,Par58,Par59,Par60,Par61,Par62,Par63,Par64,Par65,Par66,Par67,...
+        Par68,Par69,Par70,Par71,Par72,Par73};
+
+
+nC=length(C);
+
+e_trial_1as_1_2=nan(nC,1);
+e_trial_2as_1_2=nan(nC,1);
+e_trial_3as_1_2=nan(nC,1);
+e_trial_4as_1_2=nan(nC,1);
+
+e_trial_1as_1_3=nan(nC,1);
+e_trial_2as_1_3=nan(nC,1);
+e_trial_3as_1_3=nan(nC,1);
+e_trial_4as_1_3=nan(nC,1);
+
+e_trial_1as_2_2=nan(nC,1);
+e_trial_2as_2_2=nan(nC,1);
+e_trial_3as_2_2=nan(nC,1);
+e_trial_4as_2_2=nan(nC,1);
+
+e_trial_1as_2_3=nan(nC,1);
+e_trial_2as_2_3=nan(nC,1);
+e_trial_3as_2_3=nan(nC,1);
+e_trial_4as_2_3=nan(nC,1);
+
+
+m_trial_1as_1_2=nan(nC,1);
+m_trial_2as_1_2=nan(nC,1);
+m_trial_3as_1_2=nan(nC,1);
+m_trial_4as_1_2=nan(nC,1);
+
+m_trial_1as_1_3=nan(nC,1);
+m_trial_2as_1_3=nan(nC,1);
+m_trial_3as_1_3=nan(nC,1);
+m_trial_4as_1_3=nan(nC,1);
+
+m_trial_1as_2_2=nan(nC,1);
+m_trial_2as_2_2=nan(nC,1);
+m_trial_3as_2_2=nan(nC,1);
+m_trial_4as_2_2=nan(nC,1);
+
+m_trial_1as_2_3=nan(nC,1);
+m_trial_2as_2_3=nan(nC,1);
+m_trial_3as_2_3=nan(nC,1);
+m_trial_4as_2_3=nan(nC,1);
+
+
+for x=1:nC
+    partdata=C{x};
+
+indx_1as_1_2= find((partdata(:,2)==1) & (partdata(:,3)==1) & (partdata(:,4)==2));
+indx_2as_1_2= find((partdata(:,2)==2) & (partdata(:,3)==1) & (partdata(:,4)==2));
+indx_3as_1_2= find((partdata(:,2)==3) & (partdata(:,3)==1) & (partdata(:,4)==2));
+indx_4as_1_2= find((partdata(:,2)==4) & (partdata(:,3)==1) & (partdata(:,4)==2));
+
+indx_1as_1_3= find((partdata(:,2)==1) & (partdata(:,3)==1) & (partdata(:,4)==3));
+indx_2as_1_3= find((partdata(:,2)==2) & (partdata(:,3)==1) & (partdata(:,4)==3));
+indx_3as_1_3= find((partdata(:,2)==3) & (partdata(:,3)==1) & (partdata(:,4)==3));
+indx_4as_1_3= find((partdata(:,2)==4) & (partdata(:,3)==1) & (partdata(:,4)==3));
+
+indx_1as_2_2= find((partdata(:,2)==1) & (partdata(:,3)==2) & (partdata(:,4)==2));
+indx_2as_2_2= find((partdata(:,2)==2) & (partdata(:,3)==2) & (partdata(:,4)==2));
+indx_3as_2_2= find((partdata(:,2)==3) & (partdata(:,3)==2) & (partdata(:,4)==2));
+indx_4as_2_2= find((partdata(:,2)==4) & (partdata(:,3)==2) & (partdata(:,4)==2));
+
+indx_1as_2_3= find((partdata(:,2)==1) & (partdata(:,3)==2) & (partdata(:,4)==3));
+indx_2as_2_3= find((partdata(:,2)==2) & (partdata(:,3)==2) & (partdata(:,4)==3));
+indx_3as_2_3= find((partdata(:,2)==3) & (partdata(:,3)==2) & (partdata(:,4)==3));
+indx_4as_2_3= find((partdata(:,2)==4) & (partdata(:,3)==2) & (partdata(:,4)==3));
+
+% m deviance
+m_trial_1as_1_2(x,1)= mean(partdata(indx_1as_1_2, 7));
+m_trial_2as_1_2(x,1)= mean(partdata(indx_2as_1_2, 7));
+m_trial_3as_1_2(x,1)= mean(partdata(indx_3as_1_2, 7));
+m_trial_4as_1_2(x,1)= mean(partdata(indx_4as_1_2, 7));
+
+m_trial_1as_1_3(x,1)= mean(partdata(indx_1as_1_3, 7));
+m_trial_2as_1_3(x,1)= mean(partdata(indx_2as_1_3, 7));
+m_trial_3as_1_3(x,1)= mean(partdata(indx_3as_1_3, 7));
+m_trial_4as_1_3(x,1)= mean(partdata(indx_4as_1_3, 7));
+
+m_trial_1as_2_2(x,1)= mean(partdata(indx_1as_2_2, 7));
+m_trial_2as_2_2(x,1)= mean(partdata(indx_2as_2_2, 7));
+m_trial_3as_2_2(x,1)= mean(partdata(indx_3as_2_2, 7));
+m_trial_4as_2_2(x,1)= mean(partdata(indx_4as_2_2, 7));
+
+m_trial_1as_2_3(x,1)= mean(partdata(indx_1as_2_3, 7));
+m_trial_2as_2_3(x,1)= mean(partdata(indx_2as_2_3, 7));
+m_trial_3as_2_3(x,1)= mean(partdata(indx_3as_2_3, 7));
+m_trial_4as_2_3(x,1)= mean(partdata(indx_4as_2_3, 7));
+
+% e deviance
+e_trial_1as_1_2(x,1)= mean(partdata(indx_1as_1_2, 10));
+e_trial_2as_1_2(x,1)= mean(partdata(indx_2as_1_2, 10));
+e_trial_3as_1_2(x,1)= mean(partdata(indx_3as_1_2, 10));
+e_trial_4as_1_2(x,1)= mean(partdata(indx_4as_1_2, 10));
+
+e_trial_1as_1_3(x,1)= mean(partdata(indx_1as_1_3, 10));
+e_trial_2as_1_3(x,1)= mean(partdata(indx_2as_1_3, 10));
+e_trial_3as_1_3(x,1)= mean(partdata(indx_3as_1_3, 10));
+e_trial_4as_1_3(x,1)= mean(partdata(indx_4as_1_3, 10));
+
+e_trial_1as_2_2(x,1)= mean(partdata(indx_1as_2_2, 10));
+e_trial_2as_2_2(x,1)= mean(partdata(indx_2as_2_2, 10));
+e_trial_3as_2_2(x,1)= mean(partdata(indx_3as_2_2, 10));
+e_trial_4as_2_2(x,1)= mean(partdata(indx_4as_2_2, 10));
+
+e_trial_1as_2_3(x,1)= mean(partdata(indx_1as_2_3, 10));
+e_trial_2as_2_3(x,1)= mean(partdata(indx_2as_2_3, 10));
+e_trial_3as_2_3(x,1)= mean(partdata(indx_3as_2_3, 10));
+e_trial_4as_2_3(x,1)= mean(partdata(indx_4as_2_3, 10));
+
+end
+
+
+
+e_trial_1_2= nanmean([e_trial_1as_1_2 e_trial_2as_1_2 e_trial_3as_1_2 e_trial_4as_1_2]);
+e_trial_1_3= nanmean([e_trial_1as_1_3 e_trial_2as_1_3 e_trial_3as_1_3 e_trial_4as_1_3]);
+e_trial_2_2= nanmean([e_trial_1as_2_2 e_trial_2as_2_2 e_trial_3as_2_2 e_trial_4as_2_2]);
+e_trial_2_3= nanmean([e_trial_1as_2_3 e_trial_2as_2_3 e_trial_3as_2_3 e_trial_4as_2_3]);
+
+m_trial_1_2= nanmean([m_trial_1as_1_2 m_trial_2as_1_2 m_trial_3as_1_2 m_trial_4as_1_2]);
+m_trial_1_3= nanmean([m_trial_1as_1_3 m_trial_2as_1_3 m_trial_3as_1_3 m_trial_4as_1_3]);
+m_trial_2_2= nanmean([m_trial_1as_2_2 m_trial_2as_2_2 m_trial_3as_2_2 m_trial_4as_2_2]);
+m_trial_2_3= nanmean([m_trial_1as_2_3 m_trial_2as_2_3 m_trial_3as_2_3 m_trial_4as_2_3]);
+
+subplot(1,2,1)
+e_trial=[e_trial_1_2; e_trial_1_3; e_trial_2_2; e_trial_2_3];
+bar3(e_trial);
+ylabel('conditions');
+xlabel('positions');
+title('condition vs position on encoding deviance')
+ylab={'1-2', '1-3', '2-2', '2-3'};
+set(gca,'yticklabel',ylab)
+xlab={'Trial1', 'Trial2', 'Trial3', 'Trial4'};
+set(gca,'xticklabel',xlab);
+
+
+subplot(1,2,2)
+m_trial=[m_trial_1_2; m_trial_1_3; m_trial_2_2; m_trial_2_3];
+bar3(m_trial);
+ylabel('conditions');
+xlabel('positions');
+title('condition vs position on main deviance')
+ylab={'1-2', '1-3', '2-2', '2-3'};
+set(gca,'yticklabel',ylab);
+xlab={'Trial1', 'Trial2', 'Trial3', 'Trial4'};
+set(gca,'xticklabel',xlab);
+
+
+legend({'Trial1','Trial2', 'Trial3', 'Trial4'});
+
+set(gcf, 'units','normalized','outerposition',[0 0 1 1]);
+
+
+% position-wise mean
+figure(2)
+subplot(1,3,1)
+bar(mean(e_trial));
+xlabel('trials');
+title('e-deviance vs trial number');
+subplot(1,3,2)
+bar(mean(m_trial));
+xlabel('trials');
+title('m-deviance vs trial number');
+subplot(1,3,3)
+Position_means=[mean(e_trial); mean(m_trial)];
+bar3(Position_means);
+xlabel('trials');
+ylabel('measures');
+xlab={'e-deviance', 'm-deviance'};
+set(gca,'yticklabel',xlab);
+ 
+set(gcf, 'units','normalized','outerposition',[0 0 1 1]);
+
